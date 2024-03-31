@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hambuesafondo">
+
+    <LinearLayout
+        android:id="@+id/l_layout1"
+        android:layout_width="342dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/title_regis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="110dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="146dp">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:text="FAST"
+                android:textColor="#C35566"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="FOOD"
+                android:textColor="#C0C600"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_Layout2"
+        android:layout_width="359dp"
+        android:layout_height="312dp"
+        android:alpha="0.9"
+        android:background="@drawable/btn_redondowhite"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/l_layout1"
+        app:layout_constraintVertical_bias="0.408">
+
+        <LinearLayout
+            android:layout_width="172dp"
+            android:layout_height="312dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_product"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8sp"
+                android:background="@drawable/border_redondotop"
+                android:backgroundTint="#E1E3E5"
+                android:hint="Usuario"
+                android:paddingLeft="9dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/name_product"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_margin="8sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#E1E3E5"
+                android:hint="Nombre"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textColor="#FBF9F9"
+                android:textColorHint="#70777C"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/descript_product"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="8sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#E1E3E5"
+                android:hint="Apellido"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#70777C"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/precioUnida_product"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="8sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#E1E3E5"
+                android:hint="Correo"
+                android:paddingLeft="11dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/valor_product"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_margin="8sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#E1E3E5"
+                android:hint="Contraseña"
+                android:paddingLeft="11dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userNick"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Ingresar Valor"
+                android:inputType="textLongMessage|text"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Ingresar Valor"
+                android:inputType="textPersonName"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Ingresar Valor"
+                android:inputType="textPersonName"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Ingresar Valor"
+                android:inputType="textPersonName"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Ingresar Valor"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/l_layout1"
+        app:layout_constraintVertical_bias="0.702">
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:background="#7E0D0D"
+            android:text="Registrarse"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="66dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/l_layout1"
+        app:layout_constraintVertical_bias="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="216dp"
+                android:layout_height="30dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:text="YA TENGO UNA CUENTA"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBackLogin"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#7E0D0D"
+                android:text="@string/btn_login"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

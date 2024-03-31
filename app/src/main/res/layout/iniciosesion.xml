@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hambuesafondo"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/idlogo"
+        android:layout_width="181dp"
+        android:layout_height="167dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="336dp"
+        android:layout_height="362dp"
+        android:alpha="0.9"
+        android:background="@drawable/btn_redondowhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idlogo">
+
+        <TextView
+            android:id="@+id/title_Sesion"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:paddingEnd="35dp"
+            android:text="@string/welcome_fasfoot"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:autofillHints="Correo Electronico"
+            android:background="@color/gris_conteninput"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris_textinput"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:autofillHints="Contraseña"
+            android:background="@color/gris_conteninput"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris_textinput"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#7E0D0D"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idlogo"
+        app:layout_constraintVertical_bias="0.866">
+
+        <TextView
+            android:id="@+id/btnregis_sesi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:alpha="1.0"
+            android:hint="@string/Ya_tienes_Cuenta"
+            android:paddingEnd="10dp"
+            android:textAlignment="textEnd"
+            android:textColorHint="#F4F3F3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/bnt_registrarse"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/btn_register"
+            android:textColor="#7E0D0D" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

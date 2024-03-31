@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hambuesafondo">
+
+    <LinearLayout
+        android:id="@+id/title_fastfood"
+        android:layout_width="202dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059">
+
+        <TextView
+            android:id="@+id/text_fast"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:text="Fast"
+            android:textAlignment="center"
+            android:textColor="#FFDE0808"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_food"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Food"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchView2"
+        android:layout_width="280dp"
+        android:layout_height="51dp"
+        android:alpha="0.7"
+        android:background="#FFEB3B"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Puedes Buscar Aqui!...."
+        android:textColor="@color/white"
+        android:textColorHint="#BF360C"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/title_agregar_producto"-->
+<!--        android:layout_width="303dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.264"-->
+<!--        tools:ignore="DuplicateIds">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/agregar_producto"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Listas Producto"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold" />-->
+<!--androidx.constraintlayout.widget.ConstraintLayout-->
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:ignore="MissingConstraints" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="297dp"
+        android:layout_height="353dp"
+        android:layout_marginBottom="148dp"
+        android:contentDescription="sc_h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="339dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="20dp"
+            android:background="#8045565E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_FindTypeLocation"
+            tools:ignore="MissingConstraints"></TableLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linea_botones"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#7E0D0D"
+            android:text="Atras"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#7E0D0D"
+            android:text="Agregar"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

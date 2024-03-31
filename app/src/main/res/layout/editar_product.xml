@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hambuesafondo">
+
+
+    <LinearLayout
+        android:id="@+id/l_layout1"
+        android:layout_width="342dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/title_regis"
+
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:alpha="0.9"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:text="Editar Producto"
+                android:textColor="#C35566"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_Layout2"
+        android:layout_width="349dp"
+        android:layout_height="327dp"
+        android:alpha="0.9"
+        android:background="@drawable/btn_redondowhite"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/l_layout1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="316dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_product"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14sp"
+                android:background="@drawable/border_redondotop"
+                android:backgroundTint="#E1E3E5"
+                android:hint="@string/id_product"
+                android:paddingLeft="9dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/name_product"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:hint="@string/name_product"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textColor="#FBF9F9"
+                android:textColorHint="#70777C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/descript_product"
+                android:layout_width="152dp"
+                android:layout_height="35dp"
+                android:layout_margin="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:hint="@string/descrip_product"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#70777C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/precioUnida_product"
+                android:layout_width="153dp"
+                android:layout_height="35dp"
+                android:layout_margin="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:hint="@string/PrecioUnidad_product"
+                android:paddingLeft="11dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valor_product"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_margin="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#FFFFFF"
+                android:hint="@string/valor_product"
+                android:paddingLeft="11dp"
+                android:paddingTop="5dp"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#70777C"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="168dp"
+            android:layout_height="327dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editCode"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="codigo"
+                android:inputType="number"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Nombre Producto"
+                android:inputType="textPersonName"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Descripcion"
+                android:inputType="textPersonName"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Precio Unidad"
+                android:inputType="numberSigned"
+                android:textColor="@color/btn_black" />
+
+            <EditText
+                android:id="@+id/editValue"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Valor"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linea_botones"
+        android:layout_width="318dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#7E0D0D"
+            android:text="Atras"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#7E0D0D"
+            android:text="@string/act_product"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

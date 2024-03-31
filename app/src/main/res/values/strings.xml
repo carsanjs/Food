@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Food</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_register">Registrate</string>
+    <string name="todavia_notienes_cuenta">Todavia no tienes cuenta?</string>
+    <string name="welcome_fasfoot">Bienvenido a Fast Food</string>
+    <string name="email">Correo Electronico</string>
+    <string name="pass">Contraseña</string>
+    <string name="Ya_tienes_Cuenta">Ya tienes Cuenta?</string>
+    <string name="gproducto">Agregar Producto</string>
+    <string name="nproducto">Nombre del Producto:</string>
+    <string name="logo">logo</string>
+    <!--    <string name="Ya_tienes_Cuenta">Ya tienes Cuenta?</string>-->
+    <string name="id_product">Codigo</string>
+    <string name="name_product">Nombre Producto</string>
+    <string name="descrip_product">Descripcion</string>
+    <string name="PrecioUnidad_product">Precio Unidad</string>
+    <string name="valor_product">Valor</string>
+    <string name="observ_product">Observación</string>
+    <string name="agg_product">Agregar Producto</string>
+    <string name="act_product">Actualizar Producto</string>
+</resources>
